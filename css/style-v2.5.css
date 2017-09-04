@@ -108,8 +108,11 @@ a.button { display: inline-block; }
 	line-height: 20px;
 	margin-top: 8px;
 	padding-left: 24px;
-	background: url("../images/icon-sprites.png")/*tpa=http://cv.heeroluo.net/images/icon-sprites.png*/ no-repeat;
+	background: url("../images/icon-sprites.png") no-repeat;
 	background-size: 20px auto;
+}
+.header__address__item-weixin { 
+	background: url(../images/weixin-logo1.png) no-repeat;
 }
 .header__address__item-phone { background-position: 0 0; }
 .header__address__item-qq { background-position: 0 -28px; }
@@ -136,7 +139,7 @@ a.button { display: inline-block; }
 	.header__logo__jobtitle { padding-left: 10px; }
 }
 
-@media (min-width: 520px) {
+@media (min-width: 673px) {
 	.header__address__item {
 		float: left;
 		margin-right: 22px;
@@ -147,7 +150,7 @@ a.button { display: inline-block; }
 	}
 }
 
-@media (min-width: 880px) {
+@media (min-width: 960px) {
 	.header {
 		width: 100%;
 		height: 40px;
@@ -197,10 +200,10 @@ a.button { display: inline-block; }
 .section__header__subtitle { color: #999; }
 
 @media (max-width: 749px) {
-	.section .boundary { padding: 25px 0; }
+	.section .boundary { padding: 20px 0; }
 	.section__header { margin-bottom: 20px; }
-	.section__header__title { font-size: 26px; }
-	.section__header__subtitle { font-size: 20px; }
+	.section__header__title { font-size: 24px; }
+	.section__header__subtitle { font-size: 18px; }
 }
 
 @media (min-width: 750px) {
@@ -301,6 +304,10 @@ a.button { display: inline-block; }
 
 @media (max-width: 749px) {
 	.tech-skill-list__item { margin-bottom: 15px; }
+	.tech-skill-list__item__name {
+		height: 25px;
+		line-height: 25px;
+	}
 }
 
 @media (min-width: 750px) {
@@ -329,7 +336,37 @@ a.button { display: inline-block; }
 
 
 /* 教育经历 */
+
+@media (min-width: 960px) {
+	.edu__body {
+		margin-left: 20px;
+		text-align: center;
+	}
+	.edu__body_txt {
+		display: inline-block;
+		padding: 10px 30px;
+	}
+}
+
 @media (max-width: 959px) {
+	.edu {
+		margin-top: 25px;
+		padding-bottom: 15px;
+		border-bottom: 2px dashed #ccc;
+	}
+	.edu-university {
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	.edu__logo {
+		width: 30%;
+		max-width: 150px;
+		min-width: 120px;
+		margin: 0 0 10px 20px;
+		float: right;
+	}
+}
+/*@media (max-width: 959px) {
 	.edu {
 		margin-top: 25px;
 		padding-bottom: 15px;
@@ -370,7 +407,7 @@ a.button { display: inline-block; }
 		float: left;
 		margin-left: -180px;
 	}
-}
+}*/
 
 
 /* 工作经验章节 */
